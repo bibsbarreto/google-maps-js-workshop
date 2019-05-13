@@ -3,15 +3,50 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="author" content="Bianca Ferreira da Frota Barreto">
+		
 		<title>Introdução à API do Google Maps com JavaScript</title>
 
-		<meta name="author" content="Bianca Ferreira da Frota Barreto">
-    <link href="assets/stylesheets/global.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet" type="text/css" media="all">
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" async></script>
-		<script src="assets/javascripts/index.js" async></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBJq9v0tbMylSJxCLkkSRAchcKcTn-yI4&callback=initMap"
+    type="text/javascript"></script>
 	</head>
 
-	<body>
+	<body class="body-content">
+		<header class="header">
+			<ul class="nav container">
+        <li class="nav-item col-md-12">
+          <a class="nav-link text-center p-4">Maps JavaScript API</a>
+        </li>
+      </ul>
+		</header>
+		
+		<section>
+			<div class="container">
+				<div class="flow banner">
+					<img src="./img/banner.png" class="col-md-12 px-0">
+        </div>
+        
+        <div class="flow main-content">
+          
+          <div id="map"></div>
+        </div>
+			</div>
+			
+		</section>
+
+		<footer>
+      <div class="footer container text-center">
+        <div class="flow p-4">
+          <p>Copyright 2009 Your name</p>
+          <p>Copyright 2009 Your name</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
 	</body>
 </html>
