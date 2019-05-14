@@ -26,6 +26,6 @@
 ### Implementando código
 - Configurando a API no website (20 min);
 - Instanciando um mapa no website (20 min);
-- Adicionando e removendo marcadores (1h 40 min);
 - Sugestões de busca (autocomplete) (1 h);
+- Adicionando e removendo marcadores (1h 40 min);
 - Criando rotas (2 h).

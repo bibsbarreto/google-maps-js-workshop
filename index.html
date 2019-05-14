@@ -11,42 +11,73 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="./style.css" rel="stylesheet" type="text/css" media="all">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" async></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBJq9v0tbMylSJxCLkkSRAchcKcTn-yI4&callback=initMap"
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBJq9v0tbMylSJxCLkkSRAchcKcTn-yI4&libraries=places&callback=initMap"
     type="text/javascript"></script>
+    <script src="./script.js" async defer></script>
 	</head>
 
 	<body class="body-content">
 		<header class="header">
 			<ul class="nav container">
         <li class="nav-item col-md-12">
-          <a class="nav-link text-center p-4">Maps JavaScript API</a>
+          <a class="nav-link text-center p-4">Introdução à API do Google Maps com JavaScript</a>
         </li>
       </ul>
 		</header>
 		
 		<section>
-			<div class="container">
-				<div class="flow banner">
+			<div class="container main-content">
+				<div class="row banner">
 					<img src="./img/banner.png" class="col-md-12 px-0">
         </div>
-        
-        <div class="flow main-content">
+
+        <div class="row p-3">
+          <div class="text-center py-2 input-field">
+            <label for="start_point">Origem: </label>
+            <input id="start_point" type="text" placeholder="">
+            <button type="button" class="btn btn-dark" onclick="initMap()">OK</button>
+          </div>
           
-          <div id="map"></div>
+          <div class="text-center py-2 input-field">
+            <label for="end_point">Destino: </label>
+            <input id="end_point" type="text" placeholder="">
+            <button type="button" class="btn btn-dark" onclick="initMap()">OK</button>
+          </div> 
         </div>
+
+        <div id="map" class="col-md-12 px-0"></div>
 			</div>
 			
 		</section>
 
 		<footer>
       <div class="footer container text-center">
-        <div class="flow p-4">
-          <p>Copyright 2009 Your name</p>
-          <p>Copyright 2009 Your name</p>
+        <div class="p-5">
+          <a href="https://www.linkedin.com/in/itsbibsbarreto/">
+            <img src="./img/linkedin.png"  class="footer-imgs px-2">
+          </a>
+
+          <a href="https://www.linkedin.com/in/claudio-caramori-b60b27a4/">
+            <img src="./img/linkedin.png"  class="footer-imgs px-2">
+          </a>
+
+          <a href="https://jera.com.br/">
+            <img src="./img/logo-jera.png" class="footer-imgs px-2">
+          </a>
+        </div>
+
+        <div class="pb-5">
+          <p>
+            Contato: 
+            </br> 
+            biancabarreto@jera.com.br
+            </br>
+            claudiocaramori@jera.com.br
+            </br>
+            gente@jera.com.br
+          </p>
         </div>
       </div>
     </footer>
-    <script src="./script.js"></script>
 	</body>
 </html>
